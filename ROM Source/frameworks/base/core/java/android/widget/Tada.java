@@ -214,7 +214,7 @@ public class Tada {
         	if(notAppend)
         		return output;
 
-        	CharSequence appendOutput = TextUtils.concat(output, "\n\n#Original\n\n", input);
+        	CharSequence appendOutput = TextUtils.concat(output, "========", input);
         	return appendOutput;
     	}else{
     		return input;
