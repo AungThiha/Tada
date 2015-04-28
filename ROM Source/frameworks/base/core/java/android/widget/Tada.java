@@ -156,8 +156,8 @@ public class Tada {
         	output = output.replaceAll("[\\u103b\\u107e\\u107f\\u1080\\u1081\\u1082\\u1083\\u1084]", "\u103c");
         	output = output.replaceAll("[\\u103a\\u107d]", "\u103b");
         	output = output.replaceAll("\\u103d\\u103b", "\u103b\u103d");
-        	output = output.replaceAll("\\u108a", "\u103d\u103d");
-        	output = output.replaceAll("\\u103d\\u103d", "\u103d\u103d");
+        	output = output.replaceAll("\\u108a","\u103d\u103e");
+        	output = output.replaceAll("\\u103e\\u103d", "\u103d\u103e");
         	output = output.replaceAll("((?:\\u1031)?)((?:\\u103c)?)([\\u1000-\\u1021])\\u1064", "\u1064$1$2$3");
         	output = output.replaceAll("((?:\\u1031)?)((?:\\u103c)?)([\\u1000-\\u1021])\\u108b", "\u1064$1$2$3\u102d");
         	output = output.replaceAll("((?:\\u1031)?)((?:\\u103c)?)([\\u1000-\\u1021])\\u108c", "\u1064$1$2$3\u102e");
