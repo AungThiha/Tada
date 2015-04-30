@@ -12,7 +12,7 @@ gem install rubyzip
 ```
 ruby Tada.rb
 ```
-* It will ask if you also want to see the original text. Without original text you will lose hyper link text. For example, "Continue reading" will not be clickable. You're advised to choose 'Y' for this matter.
+* It will ask if you also want to see the original text. Without original text you will lose hyper link text. For example, "Continue reading" in facebook posts will not be clickable after being converted. You're advised to choose 'Y' for this matter.
 * Sit back, relax and it will do the rest for you
 
 ### How to Uninstall
