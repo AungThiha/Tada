@@ -8,6 +8,7 @@ gem install rubyzip
 ```
 
 ### How to install
+* Make sure you backup everything before you use ( i.e. nandroid backup )
 * Run it with the following command
 ```
 ruby Tada.rb
@@ -18,3 +19,5 @@ ruby Tada.rb
 ### How to Uninstall
 * Run it with the same command you run to install
 * It will detect whether your device is installed Tada or not. If not, it won't let you uninstall
+ 
+### Please, use it at your own risk
