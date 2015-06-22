@@ -3,6 +3,12 @@
 
 // Based on paytan from Ko Thura Hlaing and MyanmarZawgyiConverter.java from Unicode CLDR ( Common Locale Data Repository )
 
+// Regular Expression for checking input text is Zawgyi or not is based on Tada's Original pattern.
+// Modified it to compitable with Ethnic groups' language - Shan, Paoh, Karen- those are usable on internet.
+// Added some new rules for accurency of checking.
+// Credit ->  Original Authors of that part and Ko Aung Thiha.
+// Contributor -> San Lin Naing
+
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation; either version 2 of the License, or
@@ -21,107 +27,63 @@ package android.widget;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 import android.text.TextUtils;
 
 
 public class Tada {
+	static final String zawgyiRegex = "\u1031\u103b" // e+medial ra
+			// beginning e or medial ra
+			+ "|^\u1031|^\u103b"
+			// independent vowel, dependent vowel, tone , medial ra wa ha (no ya
+			// because of 103a+103b is valid in unicode) , digit ,
+			// symbol + medial ra
+			+ "|[\u1022-\u1030\u1032-\u1039\u103b-\u103d\u1040-\u104f]\u103b"
+			// end with asat
+			+ "|\u1039$"
+			// medial ha + medial wa
+			+ "|\u103d\u103c"
+			// medial ra + medial wa
+			+ "|\u103b\u103c"
+			// consonant + asat + ya ra wa ha independent vowel e dot below
+			// visarga asat medial ra digit symbol
+			+ "|[\u1000-\u1021]\u1039[\u101a\u101b\u101d\u101f\u1022-\u102a\u1031\u1037-\u1039\u103b\u1040-\u104f]"
+			// II+I II ae
+			+ "|\u102e[\u102d\u103e\u1032]"
+			// ae + I II
+			+ "|\u1032[\u102d\u102e]"
+			// I II , II I, I I, II II
+			+ "|[\u102d\u102e][\u102d\u102e]"
+			// U UU + U UU
+			+ "|[\u102f\u1030][\u102f\u1030]"
+			// tall aa short aa
+			+ "|[\u102b\u102c][\u102b\u102c]"
+			// shan digit + vowel
+			+ "|[\u1090-\u1099][\u102b-\u1030\u1032\u1037\u103c-\u103e]"
+			// consonant + medial ya + dependent vowel tone asat
+			+ "|[\u1000-\u102a]\u103a[\u102c-\u102e\u1032-\u1036]"
+			// independent vowel dependent vowel tone medial digit + e
+			+ "|[\u1023-\u1030\u1032-\u103a\u1040-\u104f]\u1031"
+			// other shapes of medial ra + consonant not in Shan consonant
+			+ "|[\u107e-\u1084][\u1001\u1003\u1005-\u100f\u1012-\u1014\u1016-\u1018\u101f]"
+			// u + asat
+			+ "|\u1025\u1039"
+			// eain-dray
+			+ "|[\u1081\u1083]\u108f"
+			// short na + stack characters
+			+ "|\u108f[\u1060-\u108d]"
+			// I II ae dow bolow above + asat typing error
+			+ "|[\u102d-\u1030\u1032\u1036\u1037]\u1039"
+			// aa + asat awww
+			+ "|\u102c\u1039"
+			// ya + medial wa
+			+ "|\u101b\u103c"
+			// e + zero + vowel
+			+ "|\u1031?\u1040[\u102b\u105a\u102d-\u1030\u1032\u1036-\u1038]"
+			// e + seven + vowel
+			+ "|\u1031?\u1047[\u102c-\u1030\u1032\u1036-\u1038]";
 
-    private static final Pattern ZAWGYI_DETECT_PATTERN = Pattern.compile(
-        // A regular expression matched if text is Zawgyi encoding.
-        // Using the ranges 1033-1034 or 1060-1097 will report Shan, Karen,
-        // etc. as Zawgyi.
-        "[\u105a\u1060-\u1097]|" // Zawgyi characters outside Unicode range
-            + "[\u1033\u1034]|" // These are Mon characters
-            + "\u1031\u108f|"
-            + "\u1031[\u103b-\u103e]|" // Medial right after \u1031
-            + "[\u102b-\u1030\u1032]\u1031|" // Vowel sign right after before \u1031
-            + " \u1031| \u103b|" // Unexpected characters after a space
-            + "^\u1031|^\u103b|\u1038\u103b|\u1038\u1031|"
-            + "[\u102d\u102e\u1032]\u103b|\u1039[^\u1000-\u1021]|\u1039$"
-            + "|\u1004\u1039[\u1001-\u102a\u103f\u104e]" // Missing ASAT in Kinzi
-            + "|\u1039[^u1000-\u102a\u103f\u104e]" // 1039 not before a consonant
-            // Out of order medials
-            + "|\u103c\u103b|\u103d\u103b"
-            + "|\u103e\u103b|\u103d\u103c"
-            + "|\u103e\u103c|\u103e\u103d"
-            // Bad medial combos
-            + "|\u103b\u103c"
-            // Out of order vowel signs
-            + "|[\u102f\u1030\u102b\u102c][\u102d\u102e\u1032]"
-            + "|[\u102b\u102c][\u102f\u102c]"
-            // Digit before diacritic
-            + "|[\u1040-\u1049][\u102b-\u103e\u102b-\u1030\u1032\u1036\u1037\u1038\u103a]"
-            // Single digit 0, 7 at start
-            + "|^[\u1040\u1047][^\u1040-\u1049]"
-            // Second 1039 with bad followers
-            + "|[\u1000-\u102a\u103f\u104e]\u1039[\u101a\u101b\u101d\u101f\u1022-\u103f]"
-            // Other bad combos.
-            + "|\u103a\u103e"
-            + "|\u1036\u102b]"
-            // multiple upper vowels
-            + "|\u102d[\u102e\u1032]|\u102e[\u102d\u1032]|\u1032[\u102d\u102e]"
-            // Multiple lower vowels
-            + "|\u102f\u1030|\u1030\u102f"
-            // Multiple A vowels
-            + "|\u102b\u102c|\u102c\u102b"
-            // Shan digits with vowels or medials or other signs
-            + "|[\u1090-\u1099][\u102b-\u1030\u1032\u1037\u103a-\u103e]"
-            // Isolated Shan digit
-            + "|[\u1000-\u10f4][\u1090-\u1099][\u1000-\u104f]"
-            + "|^[\u1090-\u1099][\u1000-\u102a\u103f\u104e\u104a\u104b]"
-            + "|[\u1000-\u104f][\u1090-\u1099]$"
-            // Diacritics with non-Burmese vowel signs
-            + "|[\u105e-\u1060\u1062-\u1064\u1067-\u106d\u1071-\u1074\u1082-\u108d"
-            + "\u108f\u109a-\u109d]"
-            + "[\u102b-\u103e]"
-            // Consonant 103a + some vowel signs
-            + "|[\u1000-\u102a]\u103a[\u102d\u102e\u1032]"
-            // 1031 after other vowel signs
-            + "|[\u102b-\u1030\u1032\u1036-\u1038\u103a]\u1031"
-            // Using Shan combining characters with other languages.
-            + "|[\u1087-\u108d][\u106e-\u1070\u1072-\u1074]"
-            // Non-Burmese diacritics at start, following space, or following sections
-            + "|^[\u105e-\u1060\u1062-\u1064\u1067-\u106d\u1071-\u1074"
-            + "\u1082-\u108d\u108f\u109a-\u109d]"
-            + "|[\u0020\u104a\u104b][\u105e-\u1060\u1062-\u1064\u1067-\u106d"
-            + "\u1071-\u1074\u1082-\u108d\u108f\u109a-\u109d]"
-            // Wrong order with 1036
-            + "|[\u1036\u103a][\u102d-\u1030\u1032]"
-            // Odd stacking
-            + "|[\u1025\u100a]\u1039"
-            // More mixing of non-Burmese languages
-            + "|[\u108e-\u108f][\u1050-\u108d]"
-            // Bad diacritic combos.
-            + "|\u102d-\u1030\u1032\u1036-\u1037]\u1039]"
-            // Dot before subscripted consonant
-            + "|[\u1000-\u102a\u103f\u104e]\u1037\u1039"
-            // Odd subscript + vowel signs
-            + "|[\u1000-\u102a\u103f\u104e]\u102c\u1039[\u1000-\u102a\u103f\u104e]"
-            // Medials after vowels
-            + "|[\u102b-\u1030\u1032][\u103b-\u103e]"
-            // Medials
-            + "|\u1032[\u103b-\u103e]"
-            // Medial with 101b
-            + "|\u101b\u103c"
-            // Stacking too deeply: consonant 1039 consonant 1039 consonant
-            + "|[\u1000-\u102a\u103f\u104e]\u1039[\u1000-\u102a\u103f\u104e]\u1039"
-            + "[\u1000-\u102a\u103f\u104e]"
-            // Stacking pattern consonant 1039 consonant 103a other vowel signs
-            + "|[\u1000-\u102a\u103f\u104e]\u1039[\u1000-\u102a\u103f\u104e]"
-            + "[\u102b\u1032\u103d]"
-            // Odd stacking over u1021, u1019, and u1000
-            + "|[\u1000\u1005\u100f\u1010\u1012\u1014\u1015\u1019\u101a]\u1039\u1021"
-            + "|[\u1000\u1010]\u1039\u1019"
-            + "|\u1004\u1039\u1000"
-            + "|\u1015\u1039[\u101a\u101e]"
-            + "|\u1000\u1039\u1001\u1036"
-            + "|\u1039\u1011\u1032"
-            // Vowel sign in wrong order
-            + "|\u1037\u1032"
-            + "|\u1036\u103b"
-            // Duplicated vowel
-            + "|\u102f\u102f"
-        );
+    private static final Pattern ZAWGYI_DETECT_PATTERN = Pattern.compile(zawgyiRegex);
 
 	public static CharSequence hint(CharSequence input){
 		return zg2uni(input, true); // true means not append the original text
