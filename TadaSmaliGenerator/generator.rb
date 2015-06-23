@@ -65,7 +65,7 @@ converter << fix_jdk7_bug
 zawgyi_dector = File.read(".#{@seperator}assets#{@seperator}ZawgyiDetectPattern.txt")
 
 # read Tada.smali template
-tada_smali_template = File.read(".#{@seperator}assets#{@seperator}Tada.smali")
+tada_smali_template = File.read(".#{@seperator}assets#{@seperator}TadaSmaliTemplate.txt")
 
 # create Tada.smali content
 tada_smali_content = tada_smali_template % [zawgyi_dector, converter]
