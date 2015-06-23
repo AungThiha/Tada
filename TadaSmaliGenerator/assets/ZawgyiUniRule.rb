@@ -1,6 +1,6 @@
 module ZawgyiUniRule
 	
-	@rules = [
+  @rules = [
     { from: '(\u103d|\u1087)', to: '\u103e' },
     { from: '\u103c', to: '\u103d' },
     { from: '(\u103b|\u107e|\u107f|\u1080|\u1081|\u1082|\u1083|\u1084)', to: '\u103c' },

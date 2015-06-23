@@ -31,6 +31,16 @@ end
 require ".#{@seperator}assets#{@seperator}ZawgyiUniRule.rb"
 
 #generating converter
+fix_jdk7_bug_template = 'const-string v3, "%s"
+
+    const-string/jumbo v4, "%s"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replace(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    '
 converter_template = 'const-string v3, "%s"
 
     const-string/jumbo v4, "%s"
@@ -41,14 +51,14 @@ converter_template = 'const-string v3, "%s"
 
     
     '
-converter = converter_template % [ 'null', '\uFFFF\uFFFF']
-fix_jdk7_bug = converter_template % [ 'null', '']
+converter = fix_jdk7_bug_template % [ 'null', '\uFFFF\uFFFF']
+fix_jdk7_bug = fix_jdk7_bug_template % [ 'null', '']
 ZawgyiUniRule.rules.each do |rule|
 	convert_statement = converter_template % [ rule[:from], rule[:to]]
 	converter << convert_statement
 	converter << fix_jdk7_bug
 end
-fix_jdk7_bug = converter_template % ['\uFFFF\uFFFF', 'null']
+fix_jdk7_bug = fix_jdk7_bug_template % ['\uFFFF\uFFFF', 'null']
 converter << fix_jdk7_bug
 
 #read ZawgyiDetectPattern
