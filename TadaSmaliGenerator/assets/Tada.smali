@@ -1,7 +1,7 @@
 # This file is part of Tada
 # Copyright (C) 2015-2016 Aung Thiha
 
-# Based on Rabbit from Ko Htain Linn Shwe and MyanmarZawgyiConverter.java from Unicode CLDR ( Common Locale Data Repository )
+# Based on on paytan from Ko Thura Hlaing, Rabbit from Ko Htain Linn Shwe and MyanmarZawgyiConverter.java from Unicode CLDR ( Common Locale Data Repository )
 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
