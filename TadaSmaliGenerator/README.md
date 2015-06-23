@@ -1,6 +1,7 @@
 ## Tada Smali Generator
 This tool is used to generate a Tada.smali which is used as an asset in the installer.
 
+
 ### How to use
 1. Run it with the following command
 ```
@@ -9,6 +10,7 @@ ruby generator.rb
 2. "Tada.smali" will be generated in "output" folder
 3. Replace "Tada.smali" in "assets" folder of the installer with the generated one.
 4. Now, Tada installer is updated with the newly generated Tada.smali
+
 
 ### How to contribute
 * Pattern used to detect Zawgyi is in "assets/ZawgyiDetectPattern". Java comment and new line character are not allowed in this file. Only plain regex is allowed.
