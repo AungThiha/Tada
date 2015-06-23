@@ -5,4 +5,4 @@
 
 ### b102
 * use rabbit converter instead of paytan
-* zawgyi detect pattern fix for Pa-oh and Karen characters
+* zawgyi detection pattern fix for National Ethnic language such as Shan, Pa-oh and Karen characters
