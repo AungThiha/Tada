@@ -1,7 +1,7 @@
 # This file is part of Tada
 # Copyright (C) 2015-2016 Aung Thiha
 
-# Based on paytan from Ko Thura Hlaing and MyanmarZawgyiConverter.java from Unicode CLDR ( Common Locale Data Repository )
+# Based on paytan from Ko Thura Hlaing, Rabbit from Ko Htain Linn Shwe and MyanmarZawgyiConverter.java from Unicode CLDR ( Common Locale Data Repository )
 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -32,7 +32,8 @@
 
     .prologue
     .line 29
-    const-string v0, "[\u105a\u1060-\u1097]|[\u1033\u1034]|\u1031\u108f|\u1031[\u103b-\u103e]|[\u102b-\u1030\u1032]\u1031| \u1031| \u103b|^\u1031|^\u103b|\u1038\u103b|\u1038\u1031|[\u102d\u102e\u1032]\u103b|\u1039[^\u1000-\u1021]|\u1039$|\u1004\u1039[\u1001-\u102a\u103f\u104e]|\u1039[^u1000-\u102a\u103f\u104e]|\u103c\u103b|\u103d\u103b|\u103e\u103b|\u103d\u103c|\u103e\u103c|\u103e\u103d|\u103b\u103c|[\u102f\u1030\u102b\u102c][\u102d\u102e\u1032]|[\u102b\u102c][\u102f\u102c]|[\u1040-\u1049][\u102b-\u103e\u102b-\u1030\u1032\u1036\u1037\u1038\u103a]|^[\u1040\u1047][^\u1040-\u1049]|[\u1000-\u102a\u103f\u104e]\u1039[\u101a\u101b\u101d\u101f\u1022-\u103f]|\u103a\u103e|\u1036\u102b]|\u102d[\u102e\u1032]|\u102e[\u102d\u1032]|\u1032[\u102d\u102e]|\u102f\u1030|\u1030\u102f|\u102b\u102c|\u102c\u102b|[\u1090-\u1099][\u102b-\u1030\u1032\u1037\u103a-\u103e]|[\u1000-\u10f4][\u1090-\u1099][\u1000-\u104f]|^[\u1090-\u1099][\u1000-\u102a\u103f\u104e\u104a\u104b]|[\u1000-\u104f][\u1090-\u1099]$|[\u105e-\u1060\u1062-\u1064\u1067-\u106d\u1071-\u1074\u1082-\u108d\u108f\u109a-\u109d][\u102b-\u103e]|[\u1000-\u102a]\u103a[\u102d\u102e\u1032]|[\u102b-\u1030\u1032\u1036-\u1038\u103a]\u1031|[\u1087-\u108d][\u106e-\u1070\u1072-\u1074]|^[\u105e-\u1060\u1062-\u1064\u1067-\u106d\u1071-\u1074\u1082-\u108d\u108f\u109a-\u109d]|[ \u104a\u104b][\u105e-\u1060\u1062-\u1064\u1067-\u106d\u1071-\u1074\u1082-\u108d\u108f\u109a-\u109d]|[\u1036\u103a][\u102d-\u1030\u1032]|[\u1025\u100a]\u1039|[\u108e-\u108f][\u1050-\u108d]|\u102d-\u1030\u1032\u1036-\u1037]\u1039]|[\u1000-\u102a\u103f\u104e]\u1037\u1039|[\u1000-\u102a\u103f\u104e]\u102c\u1039[\u1000-\u102a\u103f\u104e]|[\u102b-\u1030\u1032][\u103b-\u103e]|\u1032[\u103b-\u103e]|\u101b\u103c|[\u1000-\u102a\u103f\u104e]\u1039[\u1000-\u102a\u103f\u104e]\u1039[\u1000-\u102a\u103f\u104e]|[\u1000-\u102a\u103f\u104e]\u1039[\u1000-\u102a\u103f\u104e][\u102b\u1032\u103d]|[\u1000\u1005\u100f\u1010\u1012\u1014\u1015\u1019\u101a]\u1039\u1021|[\u1000\u1010]\u1039\u1019|\u1004\u1039\u1000|\u1015\u1039[\u101a\u101e]|\u1000\u1039\u1001\u1036|\u1039\u1011\u1032|\u1037\u1032|\u1036\u103b|\u102f\u102f"
+    const-string v0, 
+    "\u1031\u103b|^\u1031|^\u103b|[\u1022-\u1030\u1032-\u1039\u103b-\u103d\u1040-\u104f]\u103b|\u1039$|\u103d\u103c|\u103b\u103c|[\u1000-\u1021]\u1039[\u101a\u101b\u101d\u101f\u1022-\u102a\u1031\u1037-\u1039\u103b\u1040-\u104f]|\u102e[\u102d\u103e\u1032]|\u1032[\u102d\u102e]|[\u102d\u102e][\u102d\u102e]|[\u102f\u1030][\u102f\u1030]|[\u102b\u102c][\u102b\u102c]|[\u1090-\u1099][\u102b-\u1030\u1032\u1037\u103c-\u103e]|[\u1000-\u102a]\u103a[\u102c-\u102e\u1032-\u1036]|[\u1023-\u1030\u1032-\u103a\u1040-\u104f]\u1031|[\u107e-\u1084][\u1001\u1003\u1005-\u100f\u1012-\u1014\u1016-\u1018\u101f]|\u1025\u1039|[\u1081\u1083]\u108f|\u108f[\u1060-\u108d]|[\u102d-\u1030\u1032\u1036\u1037]\u1039|\u102c\u1039|\u101b\u103c|\u1031?\u1040[\u102b\u105a\u102d-\u1030\u1032\u1036-\u1038]|\u1031?\u1047[\u102c-\u1030\u1032\u1036-\u1038]"
 
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
@@ -122,88 +123,16 @@
 
     .line 145
     .local v2, "output":Ljava/lang/String;
-    const-string v3, "\\u106a"
+    const-string v3, "null"
 
-    const-string/jumbo v4, "\u1009"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 146
-    const-string v3, "\\u1025(?=[\\u1039\\u102c])"
-
-    const-string/jumbo v4, "\u1009"
+    const-string/jumbo v4, "\uFFFF\uFFFF"
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 147
-    const-string v3, "\\u1025\\u102e"
-
-    const-string/jumbo v4, "\u1026"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 148
-    const-string v3, "\\u106b"
-
-    const-string/jumbo v4, "\u100a"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 149
-    const-string v3, "\\u1090"
-
-    const-string/jumbo v4, "\u101b"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 150
-    const-string v3, "\\u1040"
-
-    const-string/jumbo v4, "\u1040"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 151
-    const-string v3, "\\u108f"
-
-    const-string/jumbo v4, "\u1014"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 152
-    const-string v3, "\\u1012"
-
-    const-string/jumbo v4, "\u1012"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 153
-    const-string v3, "\\u1013"
-
-    const-string/jumbo v4, "\u1013"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 154
-    const-string v3, "[\\u103d\\u1087]"
+    
+    const-string v3, "(\u103d|\u1087)"
 
     const-string/jumbo v4, "\u103e"
 
@@ -211,8 +140,17 @@
 
     move-result-object v2
 
-    .line 155
-    const-string v3, "\\u103c"
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u103c"
 
     const-string/jumbo v4, "\u103d"
 
@@ -220,8 +158,17 @@
 
     move-result-object v2
 
-    .line 156
-    const-string v3, "[\\u103b\\u107e\\u107f\\u1080\\u1081\\u1082\\u1083\\u1084]"
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "(\u103b|\u107e|\u107f|\u1080|\u1081|\u1082|\u1083|\u1084)"
 
     const-string/jumbo v4, "\u103c"
 
@@ -229,8 +176,17 @@
 
     move-result-object v2
 
-    .line 157
-    const-string v3, "[\\u103a\\u107d]"
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "(\u103a|\u107d)"
 
     const-string/jumbo v4, "\u103b"
 
@@ -238,125 +194,17 @@
 
     move-result-object v2
 
-    .line 158
-    const-string v3, "\\u103d\\u103b"
+    
+    const-string v3, "null"
 
-    const-string/jumbo v4, "\u103b\u103d"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 159
-    const-string v3, "\\u108a"
-
-    const-string/jumbo v4, "\u103d\u103e"
+    const-string/jumbo v4, ""
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 160
-    const-string v3, "\\u103e\\u103d"
-
-    const-string/jumbo v4, "\u103d\u103e"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 161
-    const-string v3, "((?:\\u1031)?)((?:\\u103c)?)([\\u1000-\\u1021])\\u1064"
-
-    const-string/jumbo v4, "\u1064$1$2$3"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 162
-    const-string v3, "((?:\\u1031)?)((?:\\u103c)?)([\\u1000-\\u1021])\\u108b"
-
-    const-string/jumbo v4, "\u1064$1$2$3\u102d"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 163
-    const-string v3, "((?:\\u1031)?)((?:\\u103c)?)([\\u1000-\\u1021])\\u108c"
-
-    const-string/jumbo v4, "\u1064$1$2$3\u102e"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 164
-    const-string v3, "((?:\\u1031)?)((?:\\u103c)?)([\\u1000-\\u1021])\\u108d"
-
-    const-string/jumbo v4, "\u1064$1$2$3\u1036"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 165
-    const-string v3, "\\u105a"
-
-    const-string/jumbo v4, "\u102b\u103a"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 166
-    const-string v3, "\\u108e"
-
-    const-string/jumbo v4, "\u102d\u1036"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 167
-    const-string v3, "\\u1033"
-
-    const-string/jumbo v4, "\u102f"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 168
-    const-string v3, "\\u1034"
-
-    const-string/jumbo v4, "\u1030"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 169
-    const-string v3, "\\u1088"
-
-    const-string/jumbo v4, "\u103e\u102f"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 170
-    const-string v3, "\\u1089"
-
-    const-string/jumbo v4, "\u103e\u1030"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 171
-    const-string v3, "\\u1039"
+    
+    const-string v3, "\u1039"
 
     const-string/jumbo v4, "\u103a"
 
@@ -364,125 +212,53 @@
 
     move-result-object v2
 
-    .line 172
-    const-string v3, "[\\u1094\\u1095]"
+    
+    const-string v3, "null"
 
-    const-string/jumbo v4, "\u1037"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 173
-    const-string v3, "([\\u1000-\\u1021])([\\u102c\\u102d\\u102e\\u1032\\u1036]){1,2}([\\u1060\\u1061\\u1062\\u1063\\u1065\\u1066\\u1067\\u1068\\u1069\\u1070\\u1071\\u1072\\u1073\\u1074\\u1075\\u1076\\u1077\\u1078\\u1079\\u107a\\u107b\\u107c\\u1085])"
-
-    const-string v4, "$1$3$2"
+    const-string/jumbo v4, ""
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 174
-    const-string v3, "\\u1064"
+    
+    const-string v3, "\u106a"
 
-    const-string/jumbo v4, "\u1004\u103a\u1039"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 175
-    const-string v3, "\\u104e"
-
-    const-string/jumbo v4, "\u104e\u1004\u103a\u1038"
+    const-string/jumbo v4, "\u1009"
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 176
-    const-string v3, "\\u1086"
+    
+    const-string v3, "null"
 
-    const-string/jumbo v4, "\u103f"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 177
-    const-string v3, "\\u1060"
-
-    const-string/jumbo v4, "\u1039\u1000"
+    const-string/jumbo v4, ""
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 178
-    const-string v3, "\\u1061"
+    
+    const-string v3, "\u106b"
 
-    const-string/jumbo v4, "\u1039\u1001"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 179
-    const-string v3, "\\u1062"
-
-    const-string/jumbo v4, "\u1039\u1002"
+    const-string/jumbo v4, "\u100a"
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 180
-    const-string v3, "\\u1063"
+    
+    const-string v3, "null"
 
-    const-string/jumbo v4, "\u1039\u1003"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 181
-    const-string v3, "\\u1065"
-
-    const-string/jumbo v4, "\u1039\u1005"
+    const-string/jumbo v4, ""
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 182
-    const-string v3, "[\\u1066\\u1067]"
-
-    const-string/jumbo v4, "\u1039\u1006"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 183
-    const-string v3, "\\u1068"
-
-    const-string/jumbo v4, "\u1039\u1007"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 184
-    const-string v3, "\\u1069"
-
-    const-string/jumbo v4, "\u1039\u1008"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 185
-    const-string v3, "\\u106c"
+    
+    const-string v3, "\u106c"
 
     const-string/jumbo v4, "\u1039\u100b"
 
@@ -490,116 +266,17 @@
 
     move-result-object v2
 
-    .line 186
-    const-string v3, "\\u1070"
+    
+    const-string v3, "null"
 
-    const-string/jumbo v4, "\u1039\u100f"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 187
-    const-string v3, "[\\u1071\\u1072]"
-
-    const-string/jumbo v4, "\u1039\u1010"
+    const-string/jumbo v4, ""
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 188
-    const-string v3, "[\\u1073\\u1074]"
-
-    const-string/jumbo v4, "\u1039\u1011"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 189
-    const-string v3, "\\u1075"
-
-    const-string/jumbo v4, "\u1039\u1012"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 190
-    const-string v3, "\\u1076"
-
-    const-string/jumbo v4, "\u1039\u1013"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 191
-    const-string v3, "\\u1077"
-
-    const-string/jumbo v4, "\u1039\u1014"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 192
-    const-string v3, "\\u1078"
-
-    const-string/jumbo v4, "\u1039\u1015"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 193
-    const-string v3, "\\u1079"
-
-    const-string/jumbo v4, "\u1039\u1016"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 194
-    const-string v3, "\\u107a"
-
-    const-string/jumbo v4, "\u1039\u1017"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 195
-    const-string v3, "\\u107b"
-
-    const-string/jumbo v4, "\u1039\u1018"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 196
-    const-string v3, "\\u107c"
-
-    const-string/jumbo v4, "\u1039\u1019"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 197
-    const-string v3, "\\u1085"
-
-    const-string/jumbo v4, "\u1039\u101c"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 198
-    const-string v3, "\\u106d"
+    
+    const-string v3, "\u106d"
 
     const-string/jumbo v4, "\u1039\u100c"
 
@@ -607,44 +284,17 @@
 
     move-result-object v2
 
-    .line 199
-    const-string v3, "\\u1091"
+    
+    const-string v3, "null"
 
-    const-string/jumbo v4, "\u100f\u1039\u100d"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 200
-    const-string v3, "\\u1092"
-
-    const-string/jumbo v4, "\u100b\u1039\u100c"
+    const-string/jumbo v4, ""
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 201
-    const-string v3, "\\u1097"
-
-    const-string/jumbo v4, "\u100b\u1039\u100b"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 202
-    const-string v3, "\\u106f"
-
-    const-string/jumbo v4, "\u100e\u1039\u100d"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 203
-    const-string v3, "\\u106e"
+    
+    const-string v3, "\u106e"
 
     const-string/jumbo v4, "\u100d\u1039\u100d"
 
@@ -652,44 +302,593 @@
 
     move-result-object v2
 
-    .line 204
-    const-string v3, "(\\u103c)([\\u1000-\\u1021])((?:\\u1039[\\u1000-\\u1021])?)"
+    
+    const-string v3, "null"
 
-    const-string v4, "$2$3$1"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 205
-    const-string v3, "(\\u103d)(\\u103d)([\\u103b\\u103c])"
-
-    const-string v4, "$3$2$1"
+    const-string/jumbo v4, ""
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 206
-    const-string v3, "(\\u103d)([\\u103b\\u103c])"
+    
+    const-string v3, "\u106f"
 
-    const-string v4, "$2$1"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 207
-    const-string v3, "(\\u103d)([\\u103b\\u103c])"
-
-    const-string v4, "$2$1"
+    const-string/jumbo v4, "\u100d\u1039\u100e"
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 208
-    const-string v3, "(?<=([\\u1000-\\u101c\\u101e-\\u102a\\u102c\\u102e-\\u103d\\u104c-\\u109f\\s]))(\\u1047)"
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1070"
+
+    const-string/jumbo v4, "\u1039\u100f"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "(\u1071|\u1072)"
+
+    const-string/jumbo v4, "\u1039\u1010"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1060"
+
+    const-string/jumbo v4, "\u1039\u1000"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1061"
+
+    const-string/jumbo v4, "\u1039\u1001"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1062"
+
+    const-string/jumbo v4, "\u1039\u1002"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1063"
+
+    const-string/jumbo v4, "\u1039\u1003"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1065"
+
+    const-string/jumbo v4, "\u1039\u1005"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1068"
+
+    const-string/jumbo v4, "\u1039\u1007"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1069"
+
+    const-string/jumbo v4, "\u1039\u1008"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "/(\u1073|\u1074)/g"
+
+    const-string/jumbo v4, "\u1039\u1011"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1075"
+
+    const-string/jumbo v4, "\u1039\u1012"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1076"
+
+    const-string/jumbo v4, "\u1039\u1013"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1077"
+
+    const-string/jumbo v4, "\u1039\u1014"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1078"
+
+    const-string/jumbo v4, "\u1039\u1015"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1079"
+
+    const-string/jumbo v4, "\u1039\u1016"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u107a"
+
+    const-string/jumbo v4, "\u1039\u1017"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u107c"
+
+    const-string/jumbo v4, "\u1039\u1019"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1085"
+
+    const-string/jumbo v4, "\u1039\u101c"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1033"
+
+    const-string/jumbo v4, "\u102f"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1034"
+
+    const-string/jumbo v4, "\u1030"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u103f"
+
+    const-string/jumbo v4, "\u1030"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1086"
+
+    const-string/jumbo v4, "\u103f"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1088"
+
+    const-string/jumbo v4, "\u103e\u102f"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1089"
+
+    const-string/jumbo v4, "\u103e\u1030"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u108a"
+
+    const-string/jumbo v4, "\u103d\u103e"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "([\u1000-\u1021])\u1064"
+
+    const-string/jumbo v4, "\u1004\u103a\u1039$1"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "([\u1000-\u1021])\u108b"
+
+    const-string/jumbo v4, "\u1004\u103a\u1039$1\u102d"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "([\u1000-\u1021])\u108c"
+
+    const-string/jumbo v4, "\u1004\u103a\u1039$1\u102e"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "([\u1000-\u1021])\u108d"
+
+    const-string/jumbo v4, "\u1004\u103a\u1039$1\u1036"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u108e"
+
+    const-string/jumbo v4, "\u102d\u1036"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u108f"
+
+    const-string/jumbo v4, "\u1014"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1090"
 
     const-string/jumbo v4, "\u101b"
 
@@ -697,42 +896,692 @@
 
     move-result-object v2
 
-    .line 209
-    const-string v3, "(\\u1047)(?=[\\u1000-\\u101c\\u101e-\\u102a\\u102c\\u102e-\\u103d\\u104c-\\u109f\\s])"
+    
+    const-string v3, "null"
 
-    const-string/jumbo v4, "\u101b"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 210
-    const-string v3, "((?:\\u1031)?)([\\u1000-\\u1021])((?:\\u1039[\\u1000-\\u1021])?)((?:[\\u102d\\u102e\\u1032])?)([\\u1036\\u1037\\u1038]{0,2})([\\u103b-\\u103e]{0,3})((?:[\\u102f\\u1030])?)([\\u1036\\u1037\\u1038]{0,2})((?:[\\u102d\\u102e\\u1032])?)"
-
-    const-string v4, "$2$3$6$1$4$9$7$5$8"
+    const-string/jumbo v4, ""
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 211
-    const-string v3, "\\u1036\\u102f"
+    
+    const-string v3, "\u1091"
 
-    const-string/jumbo v4, "\u102f\u1036"
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 212
-    const-string v3, "(\\u103a)(\\u1037)"
-
-    const-string v4, "$2$1"
+    const-string/jumbo v4, "\u100f\u1039\u1091"
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1019\u102c(\u107b|\u1093)"
+
+    const-string/jumbo v4, "\u1019\u1039\u1018\u102c"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "(\u107b|\u1093)"
+
+    const-string/jumbo v4, "\u103a\u1018"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "(\u1094|\u1095)"
+
+    const-string/jumbo v4, "\u1037"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1096"
+
+    const-string/jumbo v4, "\u1039\u1010\u103d"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1097"
+
+    const-string/jumbo v4, "\u100b\u1039\u100b"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u103c([\u1000-\u1021])([\u1000-\u1021])?"
+
+    const-string/jumbo v4, "$1\u103c$2"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "([\u1000-\u1021])\u103c\u103a"
+
+    const-string/jumbo v4, "\u103c$1\u103a"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1031([\u1000-\u1021])(\u103e)?(\u103b)?"
+
+    const-string/jumbo v4, "$1$2$3\u1031"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "([\u1000-\u1021])\u1031([\u103b\u103c\u103d\u103e]+)"
+
+    const-string/jumbo v4, "$1$2\u1031"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1032\u103d"
+
+    const-string/jumbo v4, "\u103d\u1032"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u103d\u103b"
+
+    const-string/jumbo v4, "\u103b\u103d"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u103a\u1037"
+
+    const-string/jumbo v4, "\u1037\u103a"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u102f(\u102d|\u102e|\u1036|\u1037)\u102f"
+
+    const-string/jumbo v4, "\u102f$1"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u102f\u102f"
+
+    const-string/jumbo v4, "\u102f"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "(\u102f|\u1030)(\u102d|\u102e)"
+
+    const-string/jumbo v4, "$2$1"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "(\u103e)(\u103b|\u1037)"
+
+    const-string/jumbo v4, "$2$1"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1025(\u103a|\u102c)"
+
+    const-string/jumbo v4, "\u1009$1"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1025\u102e"
+
+    const-string/jumbo v4, "\u1026"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1005\u103b"
+
+    const-string/jumbo v4, "\u1008"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1036(\u102f|\u1030)"
+
+    const-string/jumbo v4, "$1\u1036"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1031\u1037\u103e"
+
+    const-string/jumbo v4, "\u103e\u1031\u1037"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1031\u103e\u102c"
+
+    const-string/jumbo v4, "\u103e\u1031\u102c"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u105a"
+
+    const-string/jumbo v4, "\u102b\u103a"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1031\u103b\u103e"
+
+    const-string/jumbo v4, "\u103b\u103e\u1031"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "(\u102d|\u102e)(\u103d|\u103e)"
+
+    const-string/jumbo v4, "$2$1"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u102c\u1039([\u1000-\u1021])"
+
+    const-string/jumbo v4, "\u1039$1\u102c"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u103c\u1004\u103a\u1039([\u1000-\u1021])"
+
+    const-string/jumbo v4, "\u1004\u103a\u1039$1\u103c"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1039\u103c\u103a\u1039([\u1000-\u1021])"
+
+    const-string/jumbo v4, "\u103a\u1039$1\u103c"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u103c\u1039([\u1000-\u1021])"
+
+    const-string/jumbo v4, "\u1039$1\u103c"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1036\u1039([\u1000-\u1021])"
+
+    const-string/jumbo v4, "\u1039$1\u1036"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1092"
+
+    const-string/jumbo v4, "\u100b\u1039\u100c"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u104e"
+
+    const-string/jumbo v4, "\u104e\u1004\u103a\u1038"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1040(\u102b|\u102c|\u1036)"
+
+    const-string/jumbo v4, "\u101d$1"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\u1025\u1039"
+
+    const-string/jumbo v4, "\u1009\u1039"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "([\u1000-\u1021])\u103c\u1031\u103d"
+
+    const-string/jumbo v4, "$1\u103c\u103d\u1031"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "([\u1000-\u1021])\u103d\u1031\u103b"
+
+    const-string/jumbo v4, "$1\u103b\u103d\u1031"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "null"
+
+    const-string/jumbo v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    const-string v3, "\uFFFF\uFFFF"
+
+    const-string/jumbo v4, "null"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    
+    
     .line 214
     if-eqz p1, :cond_275
 
