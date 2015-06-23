@@ -1,15 +1,16 @@
 ## Installer that will patch android to install Tada
 
 ### Requirements
-* Install Ruby 2.1.6 or later
-* Install rubyzip with the following command
+* Your android need to be rooted. [iRoot](http://www.mgyun.com/m/en) may help.
+* Install Ruby 1.9.3 or later. ( [Windows](http://rubyinstaller.org/downloads/) , [other OS](https://www.ruby-lang.org/en/documentation/installation/) )
+* Open terminal or command prompt to install rubyzip with the following command
 ```
 gem install rubyzip
 ```
 
 ### How to install
 * Make sure you backup everything before you use ( i.e. nandroid backup )
-* Run it with the following command
+* Open terminal or command prompt to run it with the following command
 ```
 ruby Tada.rb
 ```
