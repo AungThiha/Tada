@@ -33,9 +33,9 @@ require ".#{@seperator}assets#{@seperator}ZawgyiUniRule.rb"
 #generating converter
 fix_jdk7_bug_template = 'const-string v3, "%s"
 
-    const-string/jumbo v4, "%s"
+    const-string v4, "%s"
 
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replace(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -54,7 +54,10 @@ converter_template = 'const-string v3, "%s"
 converter = fix_jdk7_bug_template % [ 'null', '\uFFFF\uFFFF']
 fix_jdk7_bug = fix_jdk7_bug_template % [ 'null', '']
 ZawgyiUniRule.rules.each do |rule|
-	convert_statement = converter_template % [ rule[:from], rule[:to]]
+    from = rule[:from]
+    to = rule[:to]
+    need_regex = (from =~ /\=|\[|\]|\$|\^|\-|\:|\<|\>|\(|\)|\|/) || (to =~ /\=|\[|\]|\$|\^|\-|\:|\<|\>|\(|\)|\|/)
+	convert_statement = need_regex ? converter_template % [ from, to ] : fix_jdk7_bug_template % [ from, to ]
 	converter << convert_statement
 	converter << fix_jdk7_bug
 end
