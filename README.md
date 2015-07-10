@@ -1,5 +1,5 @@
 ## Tada
-Tada is created to help Zawgyi users move to unicode. Plus, Unicode users will be able to see Zawgyi because it detects Zawgyi and convert it to Unicode.
+Tada is created to help Zawgyi users move to unicode. Plus, Unicode users will be able to see Zawgyi because it detects Zawgyi and convert it to Unicode from system leve. So, everything written in Zawgyi in your phone will be converted to Unicode.
 
 
 ### What all these folders all about
