@@ -1,4 +1,5 @@
-## Installer that will patch android to install Tada
+#### This is deprecated. Use Java version.
+### Installer that will patch android to install Tada
 
 
 ### Requirements
@@ -8,7 +9,6 @@
 ```
 gem install rubyzip
 ```
-
 
 ### How to install
 * Make sure you backup everything before you use ( i.e. nandroid backup )

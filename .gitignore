@@ -1,5 +1,5 @@
-Installer/Ruby/workspace/system/framework/*.odex
-Installer/Ruby/workspace/system/framework/*.jar
-Installer/Ruby/workspace/classesout
-Installer/Ruby/workspace/classes.dex
-Installer/Ruby/workspace/old-classes.dex
+Installer/Resource/workspace/system/framework/*.odex
+Installer/Resource/workspace/system/framework/*.jar
+Installer/Resource/workspace/classesout
+Installer/Resource/workspace/classes.dex
+Installer/Resource/workspace/old-classes.dex
